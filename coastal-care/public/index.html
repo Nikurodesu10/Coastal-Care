@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Coastal Care — Barangay 6-A Eco-Trail, Victorias City</title>
+<meta name="description" content="News, fun facts, and cottage reservations for the mangrove island eco-trail in Barangay 6-A, Victorias City." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="#top" class="brand">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 19c2-4 5-6 9-6s7 2 9 6" stroke="#e8714a" stroke-width="2" stroke-linecap="round"/>
+        <path d="M12 13V4M12 4c-2 0-3 1.5-3 3M12 4c2 0 3 1.5 3 3" stroke="#faf5e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Coastal Care
+    </a>
+    <ul class="nav-links">
+      <li><a href="#news">News</a></li>
+      <li><a href="#facts">Fun Facts</a></li>
+      <li><a href="#reserve">Reserve a Cottage</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container">
+    <div>
+      <span class="eyebrow">Brgy. 6-A · Victorias City</span>
+      <h1>A trail through the mangroves, kept by the barangay that loves it.</h1>
+      <p class="lede">Walk the eco-trail, catch up on what's happening across the island, and book one of our three cottages for your next visit.</p>
+      <div class="hero-actions">
+        <a href="#reserve" class="btn btn-coral">Reserve a Cottage</a>
+        <a href="#news" class="btn btn-outline">Latest Updates</a>
+      </div>
+    </div>
+    <svg class="hero-tide-svg" viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 220 C 60 200, 90 240, 150 220 C 210 200, 240 240, 300 220 C 340 208, 380 222, 420 215 L420 300 L0 300 Z" fill="#2c6e74" opacity="0.5"/>
+      <path d="M0 245 C 60 230, 100 260, 160 245 C 220 230, 260 260, 320 245 C 360 235, 390 245, 420 240 L420 300 L0 300 Z" fill="#244d3f"/>
+      <g stroke="#f2e8d4" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.85">
+        <path d="M70 245 L60 200 M60 200 L40 175 M60 200 L80 178"/>
+        <path d="M150 250 L142 195 M142 195 L120 168 M142 195 L162 170"/>
+        <path d="M250 248 L240 198 M240 198 L218 172 M240 198 L260 175"/>
+        <path d="M330 246 L322 200 M322 200 L302 176 M322 200 L342 178"/>
+      </g>
+    </svg>
+  </div>
+</header>
+
+<main class="trail-spine">
+
+  <section id="news">
+    <div class="container">
+      <div class="trail-stop">
+        <div class="trail-marker">01</div>
+        <div class="section-head">
+          <span class="eyebrow">Trail Stop One</span>
+          <h2>News &amp; Updates</h2>
+          <p>What's happening along the boardwalk, the nursery beds, and the cottages.</p>
+        </div>
+        <div class="news-list" id="news-list">
+          <p>Loading updates…</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="facts" class="section-alt">
+    <div class="container">
+      <div class="trail-stop">
+        <div class="trail-marker">02</div>
+        <div class="section-head">
+          <span class="eyebrow">Trail Stop Two</span>
+          <h2>Fun Mangrove Facts</h2>
+          <p>Tap below for a new fact about the ecosystem you're walking through.</p>
+        </div>
+        <div class="fact-box">
+          <p id="fact-text">Loading a fact about the mangroves…</p>
+        </div>
+        <div class="fact-actions">
+          <button class="btn btn-coral" id="new-fact-btn" type="button">Show Me Another Fact</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reserve">
+    <div class="container">
+      <div class="trail-stop">
+        <div class="trail-marker">03</div>
+        <div class="section-head">
+          <span class="eyebrow">Trail Stop Three</span>
+          <h2>Reserve a Cottage</h2>
+          <p>Three cottages sit along the trail, each open to one booking per day.</p>
+        </div>
+
+        <div class="reserve-grid">
+          <div class="cottage-cards">
+            <div class="cottage-card">
+              <h4>Bakhaw Cottage</h4>
+              <p>Closest to the entrance, shaded by the oldest mangrove stand. Good for groups up to 8.</p>
+            </div>
+            <div class="cottage-card">
+              <h4>Bangus Cottage</h4>
+              <p>Overlooks the fish pens — best spot for an early breakfast on the water.</p>
+            </div>
+            <div class="cottage-card">
+              <h4>Tahong Cottage</h4>
+              <p>Furthest along the trail, quietest option, near the bird-watching deck.</p>
+            </div>
+          </div>
+
+          <form class="reservation-form" id="reservation-form">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="field">
+              <label for="contact">Contact Number or Email</label>
+              <input type="text" id="contact" name="contact" required />
+            </div>
+            <div class="field">
+              <label for="cottage">Cottage</label>
+              <select id="cottage" name="cottage" required>
+                <option value="" disabled selected>Choose a cottage</option>
+                <option value="Bakhaw Cottage">Bakhaw Cottage</option>
+                <option value="Bangus Cottage">Bangus Cottage</option>
+                <option value="Tahong Cottage">Tahong Cottage</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Visit Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="field">
+              <label for="guests">Number of Guests (max 8)</label>
+              <input type="number" id="guests" name="guests" min="1" max="8" required />
+            </div>
+            <button type="submit" class="btn btn-coral">Book This Cottage</button>
+            <div class="form-msg" id="form-msg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    Coastal Care · Barangay 6-A Eco-Trail · Victorias City &copy; 2026
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

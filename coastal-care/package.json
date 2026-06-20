@@ -1,0 +1,9 @@
+{
+  "name": "coastal-care",
+  "version": "1.0.0",
+  "description": "Coastal Care — Barangay 6-A Eco-Trail, Victorias City",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev"
+  }
+}
